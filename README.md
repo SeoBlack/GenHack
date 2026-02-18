@@ -6,13 +6,13 @@
 
 ## ✨ Features
 
-| Key | Option |
-|-----|--------|
-| **F1** 💰 | Hack Money (+1M) |
-| **F2** ⭐ | Get 5000 XP |
-| **F3** 🌟 | Get 20 Stars |
-| **F4** ⚡ | Instant Special Power Recharge |
-| **F5** 📡 | Radar Hack |
+| Key       | Option                                    |
+| --------- | ----------------------------------------- |
+| **F1** 💰 | Hack Money (+1M)                          |
+| **F2** ⭐ | Get 5000 XP                               |
+| **F3** 🌟 | Get 20 Stars                              |
+| **F4** ⚡ | Instant Special Power Recharge            |
+| **F5** 📡 | Radar Hack                                |
 | **F6** 📡 | Advanced Radar Hack (enable before match) |
 
 Toggle with **F1–F6**, exit with **ESC**. **[X]** = enabled.
@@ -38,9 +38,9 @@ Toggle with **F1–F6**, exit with **ESC**. **[X]** = enabled.
 
 ## 🔨 Build
 
-1. Open **GenyV2.slnx** in Visual Studio  
-2. Pick **Release | x64** (or Debug/Win32)  
-3. Build → `GenyV2\x64\Release\GenyV2.exe`  
+1. Open **GenyV2.slnx** in Visual Studio
+2. Pick **Release | x64** (or Debug/Win32)
+3. Build → `GenyV2\x64\Release\GenyV2.exe`
 
 💡 If the icon fails, edit `GenyV2.rc` to point to your `.ico` or remove the icon.
 
@@ -64,4 +64,4 @@ All values in **`Config.cpp`**: `PROCESS_NAME`, `WINDOW_TITLE`, money/XP/stars a
 
 ## ⚠️ Disclaimer
 
-For **educational / single-player use** only. Memory editing may violate ToS or server rules. Use at your own risk.
+For **educational / single-player use** only. Memory editing may violate ToS or server rules. Use at your own risk, the current offsets don't work on the updated patch, you have to find your own offsets using debuggers like cheatEngine. the offsets should be closer to the current ones -+ 0xFFF
