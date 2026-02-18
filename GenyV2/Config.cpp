@@ -30,8 +30,8 @@ namespace Config {
 	uintptr_t ADVANCED_RADAR_OFFSET_2 = 0x1D0F5C; //for showing buildings
 
     // Money cheat configuration
-    uintptr_t PLAYER_BASE_OFFSET_1 = 0x006A21F8; // Static address from Cheat Engine
-    uintptr_t PLAYER_BASE_OFFSET_2 = 0xC; // Additional offset if needed
+    uintptr_t PLAYER_BASE_OFFSET_1 = 0x006A21F8; // pointer that points to the player when adding the next offset 0xC
+    uintptr_t PLAYER_BASE_OFFSET_2 = 0xC; // player object
     int MONEY_CHEAT_AMOUNT = 1000000;
     uintptr_t MONEY_ADDRESS_OFFSET = 0x38; // Final offset to money value
 
