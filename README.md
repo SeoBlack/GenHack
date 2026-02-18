@@ -29,7 +29,7 @@ GenyV2 is a **console app** (a window with text, not buttons). It:
 
 **Controls:**
 
-- **F1–F6** — Turn an option ON or OFF  
+- **F1–F6** — Turn an option ON or OFF
 - **ESC** — Close the program (the game keeps running)
 
 That’s it. No need to click ENTER to “confirm” — just press the F-key to toggle.
@@ -40,18 +40,18 @@ That’s it. No need to click ENTER to “confirm” — just press the F-key to
 
 ### 🕹️ Single-Player
 
-| Key | Option | What it does |
-|-----|--------|----------------|
-| **F1** | 💰 Hack Money 1000000+ | Adds 1,000,000 to your current money. |
-| **F2** | ⭐ Get 5000 XP | Sets your XP to 5000. |
-| **F3** | 🌟 Get 20 Stars | Sets your Stars to 20. |
+| Key    | Option                            | What it does                                                  |
+| ------ | --------------------------------- | ------------------------------------------------------------- |
+| **F1** | 💰 Hack Money 1000000+            | Adds 1,000,000 to your current money.                         |
+| **F2** | ⭐ Get 5000 XP                    | Sets your XP to 5000.                                         |
+| **F3** | 🌟 Get 20 Stars                   | Sets your Stars to 20.                                        |
 | **F4** | ⚡ Instant Special Power Recharge | Special weapons and upgrades recharge instantly (no waiting). |
 
 ### 🌐 Multiplayer
 
-| Key | Option | What it does |
-|-----|--------|----------------|
-| **F5** | 📡 Radar Hack | Reveals the minimap (simple version). |
+| Key    | Option                 | What it does                                                                                   |
+| ------ | ---------------------- | ---------------------------------------------------------------------------------------------- |
+| **F5** | 📡 Radar Hack          | Reveals the minimap (simple version).                                                          |
 | **F6** | 📡 Advanced Radar Hack | Shows units and buildings on radar. **Turn this ON before the match starts** for best results. |
 
 **Tip:** You can turn options **on and off** anytime. When you turn off radar or special power, the program puts the game code back to normal.
@@ -62,12 +62,12 @@ That’s it. No need to click ENTER to “confirm” — just press the F-key to
 
 Before you start, make sure you have:
 
-| What | Details |
-|------|---------|
-| 🖥️ **Windows** | Any recent Windows (32-bit or 64-bit is fine). |
-| 🔧 **Visual Studio** | You need this only to **build** the project. Use Visual Studio 2022 (or 2019) with “Desktop development with C++” installed. |
-| 🎮 **The game** | GeneralsOnline — the one that runs as `GeneralsOnlineZH_60.exe` with the window title that contains “GeneralsOnline ~2075” and “GitHub Buildserver”. |
-| 🔐 **Admin (sometimes)** | If the game was started as Administrator, run GenyV2.exe as Administrator too. |
+| What                     | Details                                                                                                                                              |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 🖥️ **Windows**           | Any recent Windows (32-bit or 64-bit is fine).                                                                                                       |
+| 🔧 **Visual Studio**     | You need this only to **build** the project. Use Visual Studio 2022 (or 2019) with “Desktop development with C++” installed.                         |
+| 🎮 **The game**          | GeneralsOnline — the one that runs as `GeneralsOnlineZH_60.exe` with the window title that contains “GeneralsOnline ~2075” and “GitHub Buildserver”. |
+| 🔐 **Admin (sometimes)** | If the game was started as Administrator, run GenyV2.exe as Administrator too.                                                                       |
 
 ---
 
@@ -80,8 +80,8 @@ Before you start, make sure you have:
 
 2. **Pick how to build**  
    At the top of Visual Studio, choose:
-   - **Release** (recommended) or Debug  
-   - **x64** (recommended) or Win32  
+   - **Release** (recommended) or Debug
+   - **x64** (recommended) or Win32
 
 3. **Build**  
    Press **Ctrl+Shift+B** or use the menu: **Build → Build Solution**.
@@ -100,16 +100,17 @@ Before you start, make sure you have:
 1. **Start the game** (GeneralsOnline) and leave it open.
 2. **Run GenyV2.exe**  
    If the game is running as Administrator, run GenyV2.exe as Administrator too (right‑click → Run as administrator).
-3. **Use the menu**  
-   - Press **F1** to add money, **F2** for XP, **F3** for stars, etc.  
-   - **[X]** = option is ON, **[ ]** = option is OFF.  
+3. **Use the menu**
+   - Press **F1** to add money, **F2** for XP, **F3** for stars, etc.
+   - **[X]** = option is ON, **[ ]** = option is OFF.
    - Press the same F-key again to turn an option off (where that applies).
 4. **When you’re done**  
    Press **ESC** to close GenyV2. The game keeps running. Any cheats you left ON stay active until you turn them off or close the game.
 
-**❓ “Process not found” or “Failed to get module base address”**  
-- Make sure the game is actually running.  
-- The game window title must match exactly what the program expects (the GeneralsOnline ~2075 GitHub Buildserver version).  
+**❓ “Process not found” or “Failed to get module base address”**
+
+- Make sure the game is actually running.
+- The game window title must match exactly what the program expects (the GeneralsOnline ~2075 GitHub Buildserver version).
 - The exe must be `GeneralsOnlineZH_60.exe`.
 
 ---
@@ -118,19 +119,19 @@ Before you start, make sure you have:
 
 All the numbers and names the program uses (game title, how much money to add, etc.) are in one place:
 
-- **File:** `GenyV2/Config.cpp`  
+- **File:** `GenyV2/Config.cpp`
 - **Declarations:** `GenyV2/Config.h`
 
 If you use a **different version** of the game, you may need to change:
 
-| What you want to change | Variables to look at |
-|-------------------------|----------------------|
-| Game process / window name | `PROCESS_NAME`, `WINDOW_TITLE` |
-| Money amount | `MONEY_CHEAT_AMOUNT`, and money/player offsets |
-| XP / Stars amount | `XP_CHEAT_AMOUNT`, `STARS_CHEAT_AMOUNT`, and their offsets |
-| Radar (simple) | `SIMPLE_RADAR_OFFSET` |
-| Radar (advanced) | `ADVANCED_RADAR_OFFSET_1`, `ADVANCED_RADAR_OFFSET_2` |
-| Special power patch | `SPECIAL_POWER_OFFSET`, `SPECIAL_UPGRADES_OFFSET` |
+| What you want to change    | Variables to look at                                       |
+| -------------------------- | ---------------------------------------------------------- |
+| Game process / window name | `PROCESS_NAME`, `WINDOW_TITLE`                             |
+| Money amount               | `MONEY_CHEAT_AMOUNT`, and money/player offsets             |
+| XP / Stars amount          | `XP_CHEAT_AMOUNT`, `STARS_CHEAT_AMOUNT`, and their offsets |
+| Radar (simple)             | `SIMPLE_RADAR_OFFSET`                                      |
+| Radar (advanced)           | `ADVANCED_RADAR_OFFSET_1`, `ADVANCED_RADAR_OFFSET_2`       |
+| Special power patch        | `SPECIAL_POWER_OFFSET`, `SPECIAL_UPGRADES_OFFSET`          |
 
 After editing, **build the project again** (Ctrl+Shift+B) so the changes are in the new `.exe`.
 
